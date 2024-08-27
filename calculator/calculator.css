@@ -1,0 +1,41 @@
+#calculatorDisplay {
+    height: 50px;
+    width: 250px;
+    background-color: rgb(169, 167, 167);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+}
+
+.operators {
+    display: grid;
+    grid-template-columns: repeat(4,4fr);
+    width: 250px;
+    height: 300px;
+}
+
+.numbers {
+    background-color: orange;
+    font-size: larger;
+}
+
+.numbers:hover {
+    background-color: rgba(255, 167, 5, 0.5);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.Main {
+    border: 2px solid black;
+}
+
+#minus, #add, #multiply, #Divide, #Clear, #Result {
+    background-color: rgb(160, 104, 0);    
+}

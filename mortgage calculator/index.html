@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="input-section">
+                <h2>Mortgage Calculator</h2>
+                <form>
+                    <label for="amount">Mortgage Amount</label>
+                    <input type="text" id="mortgage_amount" placeholder="$ Amount">
+
+                    <label for="term">Mortgage Term</label>
+                    <input type="text" id="mortgage_term" placeholder="Years">
+
+                    <label for="rate">Interest Rate</label>
+                    <input type="text" id="interest_rate" placeholder="% Interest">
+
+                    <label for="type">Mortgage Type</label>
+                    <div class="radio-group">
+                        <input type="radio" id="repayment_radio" name="mortgage-type" checked>
+                        <label for="repayment">Repayment</label>
+                        
+                        <input type="radio" id="interest-only" name="mortgage-type">
+                        <label for="interest-only">Interest Only</label>
+                    </div>
+
+                    <button onclick="calculateMortgage()" type="submit">Calculate Repayments</button>
+                </form>
+            </div>
+            <div class="output-section">
+                <h2>Your results</h2>
+                <p>Your monthly repayments: <span id="monthly_repayments" class="result">$2000(example)</span></p>
+                <p>Total you'll repay over the term: <span id="total_repay" class="result">$500000(example)</span></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
